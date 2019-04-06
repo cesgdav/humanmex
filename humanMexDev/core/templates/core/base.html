@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}{% endblock %} | Human Mex</title>
+
+    <!-- Bootstrap -->
+    {% load static %}
+    <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link href="{% static 'core/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- Estilos -->
+    <link href="{% static 'core/css/business-casual.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!-- Image and text -->
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="" width="50" height="50" class="d-inline-block align-top" alt="Logos">
+        </a>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded js-scroll-trigger" href="#mision">Nosotros</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded js-scroll-trigger" href="#datos">Servicios</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded js-scroll-trigger" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item {% if request.path|slice:":6" == '/blog/' %} active {% endif %} px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'blog' %}">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <!-- Pié de página -->
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0">
+            <a href="" class="link">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+
+            <a href="" class="link">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+	    </p>
+        <p class="m-0 mbt">
+        	<a href="sample.html" class="link">Política de privacidad</a> ·
+        	<a href="sample.html" class="link">Aviso legal</a> ·
+        	<a href="sample.html" class="link">Cookies</a>
+		</p>
+        <p class="m-0 mbt1">&copy; Human Mex 2019</p> <p>Developed by <a href="http://www.demonsystem.com/" target="_blank">D Tech</a> </p>
+      </div>
+	</footer>
+
+    
+    <!-- Bootstrap -->
+    <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'core/js/grayscale.js' %}"></script>
+    <script src="{% static 'core/js/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  </body>
+
+</html>

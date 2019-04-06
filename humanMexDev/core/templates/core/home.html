@@ -1,0 +1,135 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Recursos Humanos{% endblock %}
+
+{% block content %}
+
+<div class="image">
+    <div class="container">
+        <div class="seleccion animated fadeIn">
+            <b><h2><font color="#75b274">Reclutamiento</font></h2><br>
+            <h3>& selección</h3><br>
+            <h2>de <font color="#75b274">personal</font></h2></b>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="intro col-md-12">
+                <div class="intro-text text-center p-5 rounded">
+                    <a href="#mision" class="js-scroll-trigger">Saber más <br><i class="fas fa-chevron-down"></i></a>
+                </div>
+            </div>
+
+            <div class="row social">
+                <ul class="social-icons">
+                    <div class="icons">
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    </div>
+                    <div class="icons">
+                        <li><a href=""><i class="far fa-envelope-open"></i></a></li>
+                    </div>                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mision overflow-hidden animated fadeIn" id="mision">
+    <div class="container">
+        <div class="nuestra-mision col-md-4 col-xs-4">
+            <h2>Nuestra <font color="#75b274">Misión</font></h2>
+            <hr class="style13">
+            <p>Solucionar problemas de rotación de empleados para las empresas, desarrollando individuos apasionados y comprometidos con su trabajo y su entorno.</p>
+        </div>
+
+        <div class="nuestra-vision col-md-4 col-xs-4">
+            <h2>Nuestra <font color="#75b274">Misión</font></h2>
+            <hr class="style13">
+            <p>Solucionar problemas de rotación de empleados para las empresas, desarrollando individuos apasionados y comprometidos con su trabajo y su entorno.</p>
+        </div>
+    </div>
+
+    <div class="nosotros-puntos col-md-4">
+            <div class="row">
+                <div class="col-sm punto-primero">
+                    <center> 
+                        <h3 class="puntos">1</h3>
+                        <p>Integridad</p>
+                    </center>
+                </div>
+                <div class="col-sm punto-segundo">
+                    <center> 
+                        <h3 class="puntos">2</h3>
+                        <p center>Calidad</p>
+                    </center>
+                </div>
+                <div class="col-sm punto-tercero">
+                    <center> 
+                        <h3 class="puntos">3</h3>
+                        <p center>Servició</p>
+                    </center>
+                </div>
+                <div class="col-sm punto-cuarto">
+                    <center> 
+                        <h3 class="puntos">4</h3>
+                        <p center>Innovación</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="datos overflow-hidden animated fadeIn" id="datos">
+    <div class="container">
+        <img src="{% static 'core/img/494.png' %}" alt="" class="thumbnail specs">
+    </div>
+    <div class="col-sm contacto">
+        <center> 
+            <h3 class="puntos-contacto">Contacto</h3>
+        </center>
+    </div>   
+</div>
+
+<div class="contacto-form" id="contacto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Nombre</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                    </span>
+                                    <input type="email" class="form-control" id="email" placeholder="Ingrese email" required="required" /></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Mensaje</label>
+                                <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                    placeholder="Mensaje"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                Enviar Mensaje</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
