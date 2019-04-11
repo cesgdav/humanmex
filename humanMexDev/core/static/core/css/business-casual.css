@@ -27,7 +27,7 @@
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media(max-width: 767px) {
   .show{
     background-color: #000000;
   }
@@ -35,7 +35,7 @@
     background: url('../img/hombre.jpeg') no-repeat;
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 850px;
   }
 
   .mision{
@@ -311,20 +311,24 @@
     color: #ffffff
   }
 
+  .reclutamiento{
+    padding-bottom: 15px;
+  }
+
   .intro a{
     position: absolute;
     text-decoration: none;
-    top: 415px;
-    left: 40%;
+    top: 661px;
     font-weight: 300;
     font-size: 23px;
     color: #ffffff;
+    right: 120px;
   }
 
   .social{
     position: absolute;
-    top: 315px;
-    left: 15%;
+    top: 530px;
+    right: -5px;
   }
   
   .icons{
@@ -389,18 +393,14 @@
     height: 220px;
     width: 130%;
     background-color: #ffffff;
-    -webkit-transform: rotate(4deg);
-    -ms-transform: rotate(4deg);
-    transform: rotate(4deg);
     z-index: 10;
-    top: 1450px;
+    top: 1630px;
   }
   
   .nosotros-puntos{
     position:absolute;
     z-index:11;
-    right: 284px;
-    top: 1519px;
+    top: 1700px;
   }
 
   .puntos{
@@ -415,7 +415,7 @@
 
   .punto-primero{
     position: relative;
-    right: -150px;
+    right: -50px;
     top: -40px;
     text-align: center;
   }
@@ -423,21 +423,21 @@
   .punto-segundo{
     position: relative;
     right: -155px;
-    top: -30px;
+    top: -40px;
     text-align: center;
   }
 
   .punto-tercero{
     position: relative;
-    right: -418px;
-    top: -263px;
+    right: -88px;
+    top: 80px;
     text-align: center;
   }
 
   .punto-cuarto{
     position: relative;
-    right: -418px;
-    top: -252px;
+    right: 176px;
+    top: 70px;
     text-align: center;
   }
 
@@ -469,66 +469,107 @@
     top: 110px;
   }
 
-  .datos::after{
-    content: "";
-    position: absolute;
-    right: -50px;
-    height: 220px;
-    width: 130%;
-    background-color: #000000;
-    -webkit-transform: rotate(4deg);
-    -ms-transform: rotate(4deg);
-    transform: rotate(4deg);
-    z-index: 10;
-    top: 2100px;
-  }.jumbotron {
-    background: #358CCE;
-    color: #FFF;
-    border-radius: 0px;
-    }
-    .jumbotron-sm { padding-top: 24px;
-    padding-bottom: 24px; }
-    .jumbotron small {
-    color: #FFF;
-    }
-    .h1 small {
-    font-size: 24px;
-    }
-    .cta {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-      background-color: rgba(100, 99, 98, 0.9);
-    }
-    
-    .cta .cta-inner {
-      position: relative;
-      padding: 3rem;
-      margin: 0.5rem;
-      background-color: rgba(255, 255, 255, 0.85);
-    }
-    
-    .cta .cta-inner:before {
-      border-radius: 0.5rem;
-      content: '';
-      position: absolute;
-      top: -0.5rem;
-      bottom: -0.5rem;
-      left: -0.5rem;
-      right: -0.5rem;
-      border: 0.25rem solid rgba(255, 255, 255, 0.85);
-    }
-    
-    .cta .cta-innerv {
-      position: relative;
-      padding: 3rem;
-      margin: 0.5rem;
-      background-color: rgba(255, 255, 255, 0.85);
-    }
+  .puntos-contacto{
+    background-color: rgb(81, 202, 87);
+    display: inline-block;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin-left: 30px;
+    font-size: 2em;
+    z-index: 11;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .contacto{    
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    z-index: 11;
+    top: 77px;
+  }
+
+  .contacto-form{
+    background: linear-gradient(to bottom,rgba(67, 108, 219, 0.8) 0,rgba(67, 108, 219, 0.8) 100%), url('../img/contacto.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 770px;
+  }
+
+  .well{
+    padding-top: 200px;
+  }
+
+  /* Services Section
+  --------------------------------*/
+
+  #services {
+    padding: 60px 0 40px 0;
+  }
+
+  #services .box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+
+  #services .box:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  #services .icon {
+    margin: 0 auto 15px auto;
+    padding-top: 12px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+
+  #services .icon i {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  #services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  #services .title a {
+    color: #111;
+  }
+
+  #services .box:hover .title a {
+    color: #1bb1dc;
+  }
+
+  #services .description {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0;
+    text-align: left;
+  }
 
 }
  
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media(max-width: 991px) and (min-width: 768px){
   .show{
     background-color: #000000;
   }
@@ -537,7 +578,7 @@
     background: url('../img/hombre.jpeg') no-repeat;
     background-position: center;
     background-size: cover;
-    height: 370px;
+    height: 700px;
   }
 
   .mision{
@@ -816,8 +857,7 @@
   .intro a{
     position: absolute;
     text-decoration: none;
-    top: 280px;
-    left: 45%;
+    top: 550px;
     font-weight: 300;
     font-size: 23px;
     color: #ffffff;
@@ -825,7 +865,7 @@
 
   .social{
     position: absolute;
-    top: 250px;
+    top: 400px;
     left: 70%;
   }
   
@@ -889,20 +929,19 @@
     content: "";
     position: absolute;
     right: -50px;
-    height: 370px;
+    height: 220px;
     width: 130%;
     background-color: #ffffff;
     -webkit-transform: rotate(4deg);
     -ms-transform: rotate(4deg);
     transform: rotate(4deg);
     z-index: 10;
-    top: 970px;
+    top: 1325px;
   }
   
   .nosotros-puntos{
     position:absolute;
     z-index:11;
-    right: 580px;
   }
 
   .puntos{
@@ -917,29 +956,29 @@
 
   .punto-primero{
     position: relative;
-    right: -150px;
-    top: -40px;
+    right: -224px;
+    top: 10px;
     text-align: center;
   }
 
   .punto-segundo{
     position: relative;
-    right: -155px;
-    top: -30px;
+    right: -305px;
+    top: 25px;
     text-align: center;
   }
 
   .punto-tercero{
     position: relative;
-    right: -455px;
-    top: -129px;
+    right: -380px;
+    top: 40px;
     text-align: center;
   }
 
   .punto-cuarto{
     position: relative;
     right: -457px;
-    top: -124px;
+    top: 57px;
     text-align: center;
   }
 
@@ -969,65 +1008,135 @@
     width: 780px;
     position: relative;
     top: -50px;
-  }.jumbotron {
-    background: #358CCE;
-    color: #FFF;
-    border-radius: 0px;
-    }
-    .jumbotron-sm { padding-top: 24px;
-    padding-bottom: 24px; }
-    .jumbotron small {
-    color: #FFF;
-    }
-    .h1 small {
-    font-size: 24px;
-    }
-    .cta {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-      background-color: rgba(100, 99, 98, 0.9);
-    }
-    
-    .cta .cta-inner {
-      position: relative;
-      padding: 3rem;
-      margin: 0.5rem;
-      background-color: rgba(255, 255, 255, 0.85);
-    }
-    
-    .cta .cta-inner:before {
-      border-radius: 0.5rem;
-      content: '';
-      position: absolute;
-      top: -0.5rem;
-      bottom: -0.5rem;
-      left: -0.5rem;
-      right: -0.5rem;
-      border: 0.25rem solid rgba(255, 255, 255, 0.85);
-    }
-    
-    .cta .cta-innerv {
-      position: relative;
-      padding: 3rem;
-      margin: 0.5rem;
-      background-color: rgba(255, 255, 255, 0.85);
-    }
+  }
+
+  .datos::after{
+    content: "";
+    position: absolute;
+    right: -9px;
+    height: 182px;
+    width: 101%;
+    background-color: #fff;
+    -webkit-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    transform: rotate(4deg);
+    z-index: 10;
+    top: 3180px;
+  }
+
+  .puntos-contacto{
+    background-color: rgb(81, 202, 87);
+    display: inline-block;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin-left: 30px;
+    font-size: 2em;
+    z-index: 11;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .contacto{    
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    z-index: 11;
+    right: 250px;
+    top: 115px;
+  }
+
+  .contacto-form{
+    background: linear-gradient(to bottom,rgba(67, 108, 219, 0.8) 0,rgba(67, 108, 219, 0.8) 100%), url('../img/contacto.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 770px;
+  }
+
+  .well{
+    padding-top: 200px;
+  }
+
+  /* Services Section
+  --------------------------------*/
+
+  #services {
+    padding: 60px 0 40px 0;
+  }
+
+  #services .box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+
+  #services .box:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  #services .icon {
+    margin: 0 auto 15px auto;
+    padding-top: 12px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+
+  #services .icon i {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  #services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  #services .title a {
+    color: #111;
+  }
+
+  #services .box:hover .title a {
+    color: #1bb1dc;
+  }
+
+  #services .description {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0;
+    text-align: left;
+  }
  }
  
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media(max-width: 1199px) and (min-width: 992px) {
    .image{
     background: url('../img/hombre.jpeg') no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 850px;
   }
 
   .mision{
     background: url('../img/people.jpeg') no-repeat;
     background-position: center;
     background-size: cover;
-    height: 1000px;
+    height: 780px;
   }
 
   h1,
@@ -1379,13 +1488,12 @@
     -ms-transform: rotate(4deg);
     transform: rotate(4deg);
     z-index: 10;
-    top: 1285px;
+    top: 1490px;
   }
   
   .nosotros-puntos{
     position:absolute;
     z-index:11;
-    right: 580px;
   }
 
   .puntos{
@@ -1400,29 +1508,29 @@
 
   .punto-primero{
     position: relative;
-    right: -150px;
+    right: -235px;
     top: -57px;
     text-align: center;
   }
 
   .punto-segundo{
     position: relative;
-    right: -180px;
-    top: -46px;
+    right: -314px;
+    top: -37px;
     text-align: center;
   }
 
   .punto-tercero{
     position: relative;
-    right: -200px;
-    top: -33px;
+    right: -398px;
+    top: -25px;
     text-align: center;
   }
 
   .punto-cuarto{
     position: relative;
     right: -457px;
-    top: -137px;
+    top: -10px;
     text-align: center;
   }
 
@@ -1453,65 +1561,135 @@
     position: relative;
     top: -100px;
     right: -80px
-  }.jumbotron {
-    background: #358CCE;
-    color: #FFF;
-    border-radius: 0px;
-    }
-    .jumbotron-sm { padding-top: 24px;
-    padding-bottom: 24px; }
-    .jumbotron small {
-    color: #FFF;
-    }
-    .h1 small {
-    font-size: 24px;
-    }
-    .cta {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-      background-color: rgba(100, 99, 98, 0.9);
-    }
-    
-    .cta .cta-inner {
-      position: relative;
-      padding: 3rem;
-      margin: 0.5rem;
-      background-color: rgba(255, 255, 255, 0.85);
-    }
-    
-    .cta .cta-inner:before {
-      border-radius: 0.5rem;
-      content: '';
-      position: absolute;
-      top: -0.5rem;
-      bottom: -0.5rem;
-      left: -0.5rem;
-      right: -0.5rem;
-      border: 0.25rem solid rgba(255, 255, 255, 0.85);
-    }
-    
-    .cta .cta-innerv {
-      position: relative;
-      padding: 3rem;
-      margin: 0.5rem;
-      background-color: rgba(255, 255, 255, 0.85);
-    }
+  }
+
+  .datos::after{
+    content: "";
+    position: absolute;
+    right: -9px;
+    height: 182px;
+    width: 101%;
+    background-color: #fff;
+    -webkit-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    transform: rotate(4deg);
+    z-index: 10;
+    top: 2880px;
+  }
+
+  .puntos-contacto{
+    background-color: rgb(81, 202, 87);
+    display: inline-block;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin-left: 30px;
+    font-size: 2em;
+    z-index: 11;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .contacto{    
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    z-index: 11;
+    right: 250px;
+    top: 115px;
+  }
+
+  .contacto-form{
+    background: linear-gradient(to bottom,rgba(67, 108, 219, 0.8) 0,rgba(67, 108, 219, 0.8) 100%), url('../img/contacto.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 770px;
+  }
+
+  .well{
+    padding-top: 200px;
+  }
+
+  /* Services Section
+  --------------------------------*/
+
+  #services {
+    padding: 60px 0 40px 0;
+  }
+
+  #services .box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+
+  #services .box:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  #services .icon {
+    margin: 0 auto 15px auto;
+    padding-top: 12px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+
+  #services .icon i {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  #services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  #services .title a {
+    color: #111;
+  }
+
+  #services .box:hover .title a {
+    color: #1bb1dc;
+  }
+
+  #services .description {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0;
+    text-align: left;
+  }
  }
  
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .image{
     background: url('../img/hombre.jpeg') no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 850px;
   }
 
   .mision{
     background: linear-gradient(to bottom,rgba(89, 128, 235, 0.8) 0,rgba(89, 128, 235, 0.8) 100%),url('../img/people.jpeg') no-repeat;
     background-position: center;
     background-size: cover;
-    height: 1000px;
+    height: 831px;
   }
 
   h1,
@@ -1783,8 +1961,8 @@
   .intro a{
     position: absolute;
     text-decoration: none;
-    top: 536px;
-    left: 45%;
+    top: 628px;
+    left: 63%;
     font-weight: 300;
     font-size: 23px;
     color: #ffffff;
@@ -1845,9 +2023,9 @@
   .mision::after{
     content: "";
     position: absolute;
-    right: -50px;
-    height: 370px;
-    width: 130%;
+    right: 0px;
+    height: 246px;
+    width: 104%;
     background-color: #ffffff;
     -webkit-transform: rotate(4deg);
     -ms-transform: rotate(4deg);
@@ -1873,8 +2051,7 @@
 
   .nosotros-puntos{
     position:absolute;
-    z-index:11;
-    right: 990px;    
+    z-index:11;    
     top: 1519px;
   }
 
@@ -1947,16 +2124,15 @@
   .datos::after{
     content: "";
     position: absolute;
-    right: -50px;
+    right: -9px;
     height: 182px;
-    width: 118%;
+    width: 101%;
     background-color: #fff;
     -webkit-transform: rotate(4deg);
     -ms-transform: rotate(4deg);
     transform: rotate(4deg);
     z-index: 10;
-    top: 2572px;
-    overflow: hidden;
+    top: 2933px;
   }
 
   .puntos-contacto{
@@ -1997,48 +2173,64 @@
     padding-top: 200px;
   }
 
-  .jumbotron {
-    background: #358CCE;
-    color: #FFF;
-    border-radius: 0px;
-    }
-    .jumbotron-sm { padding-top: 24px;
-    padding-bottom: 24px; }
-    .jumbotron small {
-    color: #FFF;
-    }
-    .h1 small {
-    font-size: 24px;
-    }
-    .cta {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-      background-color: rgba(100, 99, 98, 0.9);
-    }
-    
-    .cta .cta-inner {
-      position: relative;
-      padding: 3rem;
-      margin: 0.5rem;
-      background-color: rgba(255, 255, 255, 0.85);
-    }
-    
-    .cta .cta-inner:before {
-      border-radius: 0.5rem;
-      content: '';
-      position: absolute;
-      top: -0.5rem;
-      bottom: -0.5rem;
-      left: -0.5rem;
-      right: -0.5rem;
-      border: 0.25rem solid rgba(255, 255, 255, 0.85);
-    }
-    
-    .cta .cta-innerv {
-      position: relative;
-      padding: 3rem;
-      margin: 0.5rem;
-      background-color: rgba(255, 255, 255, 0.85);
-    }
+  /* Services Section
+  --------------------------------*/
+
+  #services {
+    padding: 60px 0 40px 0;
+  }
+
+  #services .box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+
+  #services .box:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  #services .icon {
+    margin: 0 auto 15px auto;
+    padding-top: 12px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+
+  #services .icon i {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  #services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  #services .title a {
+    color: #111;
+  }
+
+  #services .box:hover .title a {
+    color: #1bb1dc;
+  }
+
+  #services .description {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0;
+    text-align: left;
+  }
 } 
 

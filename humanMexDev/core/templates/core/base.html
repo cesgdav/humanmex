@@ -19,6 +19,7 @@
 
     <!-- Estilos -->
     <link href="{% static 'core/css/business-casual.css' %}" rel="stylesheet">
+    <link href="{% static 'core/ionicons/css/ionicons.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   </head>
@@ -58,31 +59,22 @@
     {% block content %}{% endblock %}
 
     <!-- Pié de página -->
-    <footer class="footer text-faded text-center py-5">
+    <footer class="footer text-faded text-center py-2">
       <div class="container">
-        <p class="m-0">
-            <a href="" class="link">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
+        <div class="row">
+          <div class="col-sm">
+            <p class="m-0 mbt"><a href="mailto:humanmex.admon@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> humanmex.admon@gmail.com</a></p>
+            <p class="m-0 mbt"><a href="mailto:humanmex.reclutamiento@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> humanmex.reclutamiento@gmail.com</a></p>
+            <p class="m-0 mbt">Dirección en my house #112</p>
+            <p class="m-0 mbt1"><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:8443964772">844 396 4772</a></p>
+          </div>
 
-            <a href="" class="link">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-	    </p>
-        <p class="m-0 mbt">
-        	<a href="sample.html" class="link">Política de privacidad</a> ·
-        	<a href="sample.html" class="link">Aviso legal</a> ·
-        	<a href="sample.html" class="link">Cookies</a>
-		</p>
-        <p class="m-0 mbt1">&copy; Human Mex 2019</p> <p>Developed by <a href="http://www.demonsystem.com/" target="_blank">D Tech</a> </p>
-      </div>
-	</footer>
+          <div class="col-sm">
+            <p class="m-0 mbt1"><p class="m-0 mbt1">&copy; Human Mex 2019</p> <p>Developed by <a href="http://www.demonsystem.com/" target="_blank">D Tech</a> </p></p>
+          </div>
+        </div>
+      </div> 
+    </footer>
 
     
     <!-- Bootstrap -->
